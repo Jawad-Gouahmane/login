@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body style="text-align: center; background-color: rgb(11, 141, 233); " > 
     <div style=" padding: 150px 500px;" >
-    <form action="" style="background-color: aliceblue;  width: 400px; height: 400px; border-radius: 2px ;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: rgb(73, 73, 73); "   >
-    <h1 style="padding-top: 30px;  "  >login  </h1>
+    
+    <form id="form" action="" style="background-color: aliceblue;  width: 400px; height: 400px; border-radius: 2px ;font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color: rgb(73, 73, 73);"    >
+       
+        <h1 id="login" style="padding-top: 30px;  "  >login  </h1>
+
     <div style="padding-bottom: 20px;">
-    <label for="" style="padding-right: 165px; " >Email:</label> <br>
-    <input type="email"  placeholder="Email" style="height: 30px; width: 200px; border-radius: 3px ; border-style: solid;border-color: gray; ">  <br>
+   
+        <label  for="" style="padding-right: 165px; " >Email:</label> <br>
+                <input id="email"  type=" email  " name="" value=""  placeholder="Email" style="height: 30px; width: 200px; border-radius: 3px ; border-style: solid;border-color: gray; " required>  <br>
     </div>
-     <div>
-    <label for="" style="padding-right: 135px; " >Password:</label> <br>
-    <input type="password" placeholder="Password" style="height: 30px; width: 200px; border-radius: 3px ; border-style: solid;border-color: gray;"  >  <br>
-    </div>
+        <div>
+    
+            <label for="" style="padding-right: 135px; " >Password:</label> <br>
+    
+            <input id="password" type="password" name="" value="" placeholder="Password" style="height: 30px; width: 200px; border-radius: 3px ; border-style: solid;border-color: gray;"  >  <br>
+    
+        </div>
     
     <div style="padding-top: 30px; padding-right: 75px; " >
 
-    <input type="checkbox" > 
+    <input type="checkbox" id="showpass" onclick="togglepassword()" > 
     
     <label for="" >Show password</label> <br>
 
-    <button style="margin-top: 20px; height: 30px ; width: 210px; margin-left: 80px; background-color:rgb(11, 141, 233) ;color: white; border-radius: 5px; border: none; "  > Sign up</button>
+    <button id="btn" type="submit" onclick="" style="margin-top: 20px; height: 30px ; width: 210px; margin-left: 80px; background-color:rgb(11, 141, 233) ;color: white; border-radius: 5px; border: none; "  > Sign up</button>
     </div >
     <div style="font-size: 11px;" >
    <p>Forgot Username / Passsword ? </p> 
@@ -33,5 +41,6 @@
   </div>
 </div>
     </form>
+    <script src="main.js"> </script>
 </body>
 </html>

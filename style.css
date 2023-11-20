@@ -1,0 +1,19 @@
+.succes {
+  display: inline-block;
+  padding-top: 0px;
+  color: green;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.danger {
+  display: inline-block;
+  padding-top: 0px;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
